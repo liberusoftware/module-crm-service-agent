@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Actions\Helpdesk;
+namespace Liberu\CRM\ServiceAgent\Actions\Helpdesk;
 
-use App\Models\Ticket;
+use Liberu\CRM\ServiceAgent\Models\Ticket;
 use App\Models\User;
 
 class CreateTicketFromWhatsApp

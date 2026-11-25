@@ -1,8 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Liberu\CRM\ServiceAgent\Http\Controllers;
 
-use App\Models\Ticket;
+
+use Illuminate\Routing\Controller;
+use Liberu\CRM\ServiceAgent\Models\Ticket;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 

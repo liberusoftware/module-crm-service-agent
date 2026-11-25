@@ -2,9 +2,12 @@
 
 declare(strict_types=1);
 
-namespace App\Models;
+namespace Liberu\CRM\ServiceAgent\Models;
 
-use App\Traits\IsTenantModel;
+
+use Liberu\CRM\EmailProductivity\Models\Message;
+use App\Models\User;
+use Liberu\Foundation\Organizations\Traits\IsTenantModel;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 

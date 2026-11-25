@@ -1,13 +1,20 @@
 <?php
 
-namespace App\Services;
+namespace Liberu\CRM\ServiceAgent\Services;
 
-use App\Events\MessageReplySent;
-use App\Events\NewMessageReceived;
-use App\Models\ConnectedAccount;
-use App\Models\OAuthConfiguration;
-use App\Services\Zernio\ZernioClient;
-use App\Services\Zernio\ZernioTenantService;
+
+use Liberu\CRM\ChannelGateway\Services\Social\FacebookMessengerService;
+use Liberu\CRM\EmailProductivity\Services\GmailService;
+use Liberu\CRM\EmailProductivity\Services\ImapService;
+use Liberu\CRM\EmailProductivity\Services\OutlookService;
+use Liberu\CRM\EmailProductivity\Services\Pop3Service;
+use Liberu\CRM\MobileMessaging\Services\WhatsAppBusinessService;
+use Liberu\CRM\ServiceAgent\Events\MessageReplySent;
+use Liberu\CRM\ServiceAgent\Events\NewMessageReceived;
+use Liberu\Foundation\Identity\Socialstream\Models\ConnectedAccount;
+use Liberu\Foundation\Integrations\Models\OAuthConfiguration;
+use Liberu\CRM\ChannelGateway\Services\Zernio\ZernioClient;
+use Liberu\CRM\ChannelGateway\Services\Zernio\ZernioTenantService;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Cache;

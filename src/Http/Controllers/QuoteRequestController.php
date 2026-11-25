@@ -1,8 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Liberu\CRM\ServiceAgent\Http\Controllers;
 
-use App\Models\QuoteRequest;
+
+use Illuminate\Routing\Controller;
+use Liberu\CRM\ServiceAgent\Models\QuoteRequest;
 use Illuminate\Http\Request;
 
 class QuoteRequestController extends Controller

@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Events;
+namespace Liberu\CRM\ServiceAgent\Events;
 
-use App\Models\Team;
-use App\Models\Ticket;
+use Liberu\Foundation\Organizations\Models\Team;
+use Liberu\CRM\ServiceAgent\Models\Ticket;
 use Illuminate\Foundation\Events\Dispatchable;
 
 class NewTicket
